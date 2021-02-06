@@ -77,27 +77,33 @@ The playbook implements the following tasks:
   
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
+![](Diagrams/Sudo_Docker_PS.PNG)
 
-Target Machines & Beats
+### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-10.0.0.5
-10.0.0.6
-10.0.0.7
+  * 10.0.0.5
+  * 10.0.0.6
+  * 10.0.0.7
+  
 We have installed the following Beats on these machines:
-Filebeat and Metricbeat were installed on Web-1, Web-2, and Web-3. 
+  * Filebeat and Metricbeat were installed on Web-1, Web-2, and Web-3. 
+  
 These Beats allow us to collect the following information from each machine:
-Filebeat collects system events such as logins to see who is accessing the system.
-Metricbeat collects information such as cpu usage and memory. Ity helps to keep track of your system and to make sure nothing is using more than it should. 
-Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
-SSH into the control node and follow the steps below:
-Copy the _____ file to _____.
-Update the _____ file to include...
-Run the playbook, and navigate to ____ to check that the installation worked as expected.
-TODO: Answer the following questions to fill in the blanks:
-Copy the elk-install.,yml file to /etc/ansible/roles/elk-install.yml
-Update the hosts file to include the attribute, then include your destination ip of the ELK server.    
-[elk]
-10.2.0.4 ansible_python_interpreter=/usr/bin/python3
+  * Filebeat collects system events such as logins to see who is accessing the system.
+  * Metricbeat collects information such as cpu usage and memory. Ity helps to keep track of your system and to make sure nothing is using more than it should. 
 
-The url is http://[your_elk_server_ip]:5601/app/kibana
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
+SSH into the control node and follow the steps below:
+  1. Copy the _____ file to _____.
+  2. Update the _____ file to include...
+  3. Run the playbook, and navigate to ____ to check that the installation worked as expected.
+  
+Answers:
+  1. Copy the elk-install.,yml file to /etc/ansible/roles/elk-install.yml
+  2. Update the hosts file to include the attribute, then include your destination ip of the ELK server.    
+       * [elk]
+       * 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
+
+  3. The url is http://[your_elk_server_ip]:5601/app/kibana
