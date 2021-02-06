@@ -1,13 +1,14 @@
 # Project_1
 Creation of ELK stack and ansible containers
-# H1 Automated ELK Stack Deployment
+# Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
 
+![](Diagrams/Web_Diagram_Project_1_Finished.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
-Elk Install
-DVWA
-FileBeat
+..*Elk Install
+..*DVWA
+..*FileBeat
 This document contains the following details:
 Description of the Topology
 Access Policies
