@@ -6,17 +6,20 @@ The files in this repository were used to configure the network depicted below.
 ![](Diagrams/Web_Diagram_Project_1_Finished.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
-..*Elk Install
-..*DVWA
-..*FileBeat
+
+  * Elk Install
+  * DVWA
+  * FileBeat
+  
 This document contains the following details:
-Description of the Topology
-Access Policies
-ELK Configuration
-Beats in Use
-Machines Being Monitored
-How to Use the Ansible Build
-Description of the Topology
+  * Description of the Topology
+  * Access Policies
+  * ELK Configuration
+  * Beats in Use
+  * Machines Being Monitored
+  * How to Use the Ansible Build
+  * Description of the Topology
+  
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 Load Balancers are the access point from a service that serves multiple machines. This will allow the high availability models to function properly. 
